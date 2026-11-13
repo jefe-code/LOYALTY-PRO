@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f5ef">
+  <meta name="description" content="LOYALTY PRO — digital loyalty cards for modern local businesses.">
+  <title>LOYALTY PRO — Make every visit count</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&family=Noto+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Loyalty Pro home"><span class="brand-mark">L<span>+</span></span><span>LOYALTY<span class="brand-light">PRO</span></span></a>
+    <nav class="desktop-nav"><a href="#product" data-i18n="nav_product">Product</a><a href="#how" data-i18n="nav_how">How it works</a><a href="#business" data-i18n="nav_business">For business</a></nav>
+    <div class="top-actions">
+      <select id="language" class="language" aria-label="Language"><option value="en">EN</option><option value="fr">FR</option><option value="ar">AR</option></select>
+      <button class="btn btn-quiet" id="loginOpen" data-i18n="login">Log in</button>
+      <a class="btn btn-dark" href="#business" data-i18n="get_started">Get started <span>↗</span></a>
+      <button class="mobile-menu" id="mobileMenu" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero section-wrap">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse"></span><span data-i18n="eyebrow">THE LOYALTY PLATFORM FOR LOCAL BUSINESS</span></div>
+        <h1 data-i18n="hero_title">Turn every visit<br>into <em>lasting loyalty.</em></h1>
+        <p class="hero-lead" data-i18n="hero_desc">A simple digital stamp card that brings customers back. No app download, no plastic cards — just a better experience for everyone.</p>
+        <div class="hero-buttons"><a class="btn btn-dark btn-large" href="#business" data-i18n="hero_cta">Build your loyalty card <span>↗</span></a><a class="text-link" href="#product" data-i18n="see_product">Explore the platform <span>↓</span></a></div>
+        <div class="hero-proof"><div class="avatar-stack"><i>☕</i><i>🥐</i><i>✂</i><i>＋</i></div><span data-i18n="hero_proof">Made for cafés, bakeries, salons and more.</span></div>
+      </div>
+      <div class="hero-art">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="float-tag tag-top"><span class="tag-dot"></span><span data-i18n="tag_digital">100% digital</span></div>
+        <div class="loyalty-card">
+          <div class="card-top"><div class="mini-logo">M</div><div><small>MEMBERS CLUB</small><b>Maison Moka</b></div><span class="card-chip">✦</span></div>
+          <div class="card-label">YOUR COFFEE JOURNEY</div>
+          <div class="stamp-grid" aria-label="Loyalty stamp card"><span class="stamp filled">✦</span><span class="stamp filled">✦</span><span class="stamp filled">✦</span><span class="stamp filled">✦</span><span class="stamp">5</span><span class="stamp">6</span><span class="stamp">7</span><span class="stamp">8</span><span class="stamp reward">☕</span></div>
+          <div class="card-bottom"><span>04 <small>/ 08 STAMPS</small></span><span class="reward-note">2 more for a treat</span></div>
+          <div class="card-progress"><span></span></div>
+        </div>
+        <div class="float-tag tag-bottom"><span class="gift-icon">✧</span><span><b data-i18n="tag_reward">Reward unlocked</b><small data-i18n="tag_reward_sub">A little thank you.</small></span></div>
+        <div class="sparkle sparkle-one">✳</div><div class="sparkle sparkle-two">✦</div>
+      </div>
+    </section>
+
+    <section class="metrics-strip"><div><strong>10 sec</strong><span data-i18n="metric_1">to join a loyalty card</span></div><div><strong>0 apps</strong><span data-i18n="metric_2">for your customers to install</span></div><div><strong>1 QR</strong><span data-i18n="metric_3">to bring them back</span></div><div class="strip-note" data-i18n="metric_note">Simple for customers. Powerful for businesses.</div></section>
+
+    <section class="section-wrap product-section" id="product">
+      <div class="section-heading"><div><div class="eyebrow">01 / THE EXPERIENCE</div><h2 data-i18n="product_title">A loyalty card that<br><em>lives in their pocket.</em></h2></div><p data-i18n="product_desc">From the first scan to the final reward, every step feels effortless — on the customer's phone and in your dashboard.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card feature-main"><div class="feature-number">01</div><div class="phone-preview"><div class="phone-notch"></div><div class="phone-brand">MOKA<span> CLUB</span></div><div class="phone-greeting">Hello, Sara 👋</div><div class="phone-card"><small>YOUR REWARDS</small><b>One coffee on us.</b><div class="mini-stamps"><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>✦</i><i>○</i><i>○</i></div><small>6 OF 8 VISITS</small></div><div class="phone-nav"><span>⌂</span><span>✧</span><span>◷</span></div></div><div class="feature-text"><span class="feature-kicker" data-i18n="feature_1_kicker">FOR YOUR CUSTOMERS</span><h3 data-i18n="feature_1_title">No app. No friction.</h3><p data-i18n="feature_1_desc">Scan a QR code, enter a first name and contact, and save the card to the home screen.</p></div></article>
+        <article class="feature-card feature-dashboard"><div class="feature-number">02</div><div class="dash-visual"><div class="dash-head"><span>OVERVIEW</span><span class="dash-period">This month⌄</span></div><div class="dash-stats"><div><small>ACTIVE MEMBERS</small><b>1,284</b><em>↗ 12.8%</em></div><div><small>REWARDS CLAIMED</small><b>326</b><em>↗ 8.2%</em></div></div><div class="bars"><i style="height:35%"></i><i style="height:50%"></i><i style="height:43%"></i><i style="height:68%"></i><i style="height:58%"></i><i style="height:82%"></i><i style="height:74%"></i><i style="height:96%"></i><i style="height:78%"></i></div><div class="bars-label"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span><span>SAT</span><span>SUN</span></div></div><div class="feature-text"><span class="feature-kicker" data-i18n="feature_2_kicker">FOR YOUR BUSINESS</span><h3 data-i18n="feature_2_title">Your customers, understood.</h3><p data-i18n="feature_2_desc">Manage visits, rewards, staff and customer activity from one clear dashboard.</p></div></article>
+        <article class="feature-card feature-qr"><div class="feature-number">03</div><div class="qr-visual"><div class="qr-box"><span>▦</span><span>▦</span><span>▦</span><span>▦</span><span>▦</span><span>▦</span><span>▦</span><span>▦</span><span>▦</span></div><div class="scan-ring">↗</div></div><div class="feature-text"><span class="feature-kicker" data-i18n="feature_3_kicker">ONE SIMPLE SCAN</span><h3 data-i18n="feature_3_title">A QR code that works harder.</h3><p data-i18n="feature_3_desc">Place it at the counter, on tables or receipts. Your loyalty programme is always one scan away.</p></div></article>
+      </div>
+    </section>
+
+    <section class="how-section" id="how"><div class="section-wrap"><div class="eyebrow">02 / HOW IT WORKS</div><div class="section-heading"><h2 data-i18n="how_title">From hello to<br><em>“see you again”.</em></h2><p data-i18n="how_desc">A simple flow that makes joining easy and coming back rewarding.</p></div><div class="steps"><article><span>01</span><div class="step-icon">▦</div><h3 data-i18n="step1_title">Scan</h3><p data-i18n="step1_desc">Customer scans your unique QR code.</p></article><article><span>02</span><div class="step-icon">＋</div><h3 data-i18n="step2_title">Join</h3><p data-i18n="step2_desc">They create a card in seconds, right in the browser.</p></article><article><span>03</span><div class="step-icon">✦</div><h3 data-i18n="step3_title">Collect</h3><p data-i18n="step3_desc">Your team validates each visit securely.</p></article><article><span>04</span><div class="step-icon">🎁</div><h3 data-i18n="step4_title">Enjoy</h3><p data-i18n="step4_desc">A reward brings them back for another visit.</p></article></div></div></section>
+
+    <section class="section-wrap business-section" id="business"><div class="business-copy"><div class="eyebrow">03 / BUILT FOR LOCAL BUSINESS</div><h2 data-i18n="business_title">Small details.<br><em>Stronger relationships.</em></h2><p data-i18n="business_desc">Whether you serve espresso, fresh bread or a fresh new look, LOYALTY PRO helps turn regulars into your biggest fans.</p><div class="industry-list"><span>☕ <b>Cafés</b></span><span>🥐 <b>Bakeries</b></span><span>✂ <b>Barbers & salons</b></span><span>🛍 <b>Retail</b></span><span>🍽 <b>Restaurants</b></span></div><a class="btn btn-dark btn-large" href="#demo" data-i18n="business_cta">Try the live demo <span>↗</span></a></div><div class="business-side"><div class="business-quote"><div class="quote-mark">“</div><p data-i18n="quote">Make your best customers feel like regulars — every single time.</p><div class="quote-line"></div><small>LOYALTY PRO / THE IDEA</small></div><div class="side-orb"></div></div></section>
+
+    <section class="demo-section" id="demo"><div class="section-wrap demo-inner"><div><div class="eyebrow">04 / TRY IT OUT</div><h2 data-i18n="demo_title">See how your<br><em>loyalty club feels.</em></h2><p data-i18n="demo_desc">Preview the customer card and explore the business sign-in. The demo card is illustrative until connected to your live programme.</p></div><div class="demo-actions"><a class="btn btn-light btn-large" href="card.html?demo=1" data-i18n="demo_card">Open sample card ↗</a><button class="btn btn-outline-light" id="dashboardOpen" data-i18n="demo_dashboard">Business dashboard →</button></div></div></section>
+  </main>
+  <footer class="footer"><a class="brand brand-footer" href="#home"><span class="brand-mark">L<span>+</span></span><span>LOYALTY<span class="brand-light">PRO</span></span></a><span data-i18n="footer_note">A better reason to come back.</span><span>© 2026 LOYALTY PRO</span></footer>
+
+  <div class="modal-backdrop" id="loginModal" hidden><section class="modal"><button class="modal-close" data-close="loginModal">×</button><div class="eyebrow">BUSINESS ACCESS</div><h2 data-i18n="login_title">Welcome back.</h2><p data-i18n="login_desc">Sign in to manage your loyalty programme.</p><form id="loginForm"><label>Email<input type="email" id="loginEmail" required autocomplete="email"></label><label>Password<input type="password" id="loginPassword" required autocomplete="current-password"></label><button class="btn btn-dark btn-large full" type="submit" data-i18n="login_submit">Log in to dashboard ↗</button><p class="form-message" id="loginMessage"></p></form><div class="modal-foot">New to LOYALTY PRO? <a href="#business" data-close="loginModal">Talk to us</a></div></section></div>
+  <script src="app.js"></script>
+</body></html>
